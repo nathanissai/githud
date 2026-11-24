@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guías y Seguridad - Ruta Silvestre</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo-container">
+      <h1>Ruta Silvestre</h1>
+    </div>
+    <div class="header-search">
+      <input type="text" placeholder="Buscar rutas...">
+      <button type="button"></button>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="destinos.html">Destinos</a></li>
+        <li><a href="guias.html" class="active">Guías & Seguridad</a></li>
+        <li><a href="reserva.html">Reservas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main>
+    <section class="hero">
+      <h2>Equipo de Campo y Seguridad</h2>
+      <p>Profesionales certificados en rescate y primeros auxilios en áreas silvestres.</p>
+    </section>
+
+    <h2 class="section-title">Conoce a los Guías</h2>
+    <div class="grid-container">
+      
+      <!-- GUÍA 1 -->
+      <div class="card">
+        <img src="img.equipo/camila.jpeg" alt="Elena Vargas">
+        <div class="card-content">
+          <h3>Camila Rocha</h3>
+          <p style="color: var(--terracota); font-weight: 600; font-size: 0.9rem; margin-bottom: 0.5rem;">Botánica y Alta Montaña</p>
+          <p style="font-size: 0.9rem; color: #555;">Más de 10 años liderando expediciones y estudios de flora nativa.</p>
+          
+          <div class="extra-info" id="info-elena">
+            <p><strong>Certificaciones:</strong> WFR (Wilderness First Responder), Guía UIMLA.</p>
+            <p><strong>Especialidad:</strong> Identificación de ecosistemas andinos y supervivencia en bosques templados.</p>
+            <p><strong>Idiomas:</strong> Español, Inglés y Francés.</p>
+          </div>
+
+          <button class="btn-ver-mas" onclick="toggleInfo('info-elena', this)">Ver más</button>
+        </div>
+      </div>
+
+      <!-- GUÍA 2 -->
+      <div class="card">
+        <img src="img.equipo/mateo.jpeg" alt="Mateo Silva">
+        <div class="card-content">
+          <h3>Mateo Silva</h3>
+          <p style="color: var(--terracota); font-weight: 600; font-size: 0.9rem; margin-bottom: 0.5rem;">Rescate WFR y Fauna</p>
+          <p style="font-size: 0.9rem; color: #555;">Apasionado por la conservación y rescatista certificado en zonas remotas.</p>
+          
+          <div class="extra-info" id="info-mateo">
+            <p><strong>Certificaciones:</strong> Rescatista en Zonas Silvestres, Especialista en Fauna Silvestre.</p>
+            <p><strong>Especialidad:</strong> Navegación GPS avanzada, meteorología de montaña y rastreo.</p>
+            <p><strong>Idiomas:</strong> Español e Inglés.</p>
+          </div>
+
+          <button class="btn-ver-mas" onclick="toggleInfo('info-mateo', this)">Ver más</button>
+        </div>
+      </div>
+
+      <!-- GUÍA 3 -->
+      <div class="card">
+        <img src="img.equipo/Andres.jpeg" alt="Lucas Morales">
+        <div class="card-content">
+          <h3>Andrés Mendoza</h3>
+          <p style="color: var(--terracota); font-weight: 600; font-size: 0.9rem; margin-bottom: 0.5rem;">Ecoturismo Costero y Kayak</p>
+          <p style="font-size: 0.9rem; color: #555;">Experto en exploración marina, mareas y travesías en entornos acuáticos.</p>
+          
+          <div class="extra-info" id="info-lucas">
+            <p><strong>Certificaciones:</strong> Instructor de Kayak de Mar, Primeros Auxilios Avanzados.</p>
+            <p><strong>Especialidad:</strong> Interpretación de ecosistemas costeros y avistamiento de aves marinas.</p>
+            <p><strong>Idiomas:</strong> Español y Portugués.</p>
+          </div>
+
+          <button class="btn-ver-mas" onclick="toggleInfo('info-lucas', this)">Ver más</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- PROTOCOLOS DE SEGURIDAD -->
+    <div class="protocol-box">
+      <h3 style="color: var(--verde-bosque); margin-bottom: 1rem;">Protocolos de Seguridad Activa</h3>
+      <ul>
+        <li><strong>Comunicación Satelital:</strong> Dispositivos independientes de la señal móvil convencional.</li>
+        <li><strong>Monitoreo Climático:</strong> Análisis meteorológico constante antes y durante cada travesía.</li>
+        <li><strong>Kit Médico Avanzado:</strong> Mochilas de primeros auxilios para traumatología en zonas agrestes.</li>
+        <li><strong>No Dejar Rastro:</strong> Estrictas directrices de impacto ambiental cero.</li>
+      </ul>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Ruta Silvestre</h4>
+        <p>Ecoturismo responsable y conservación activa.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Contacto</h4>
+        <p>Email: contacto@rutasilvestre.com</p>
+        <p>Teléfono: +56 9 1234 5678</p>
+      </div>
+      <div class="footer-section">
+        <h4>Redes Sociales</h4>
+        <div class="social-links">
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+          <a href="#">YouTube</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Ruta Silvestre. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- SCRIPT PARA EL BOTÓN VER MÁS -->
+  <script>
+    function toggleInfo(id, btn) {
+      const info = document.getElementById(id);
+      if (info.style.display === "block") {
+        info.style.display = "none";
+        btn.textContent = "Ver más";
+      } else {
+        info.style.display = "block";
+        btn.textContent = "Ver menos";
+      }
+    }
+  </script>
+
+</body>
+</html>
